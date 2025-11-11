@@ -155,11 +155,15 @@
       botoes[i].classList.add("btn-dark" );
     }
 
-    document.getElementById("proxima").textContent =
-      indice === perguntas.length - 1 ? "Finalizar" : "Próxima";
-      document.getElementById("proxima").style.diplay =
-        indice === perguntas.length - 1 ? classList.remove("btn-primary"); classList.add("btn-success") 
-        : classList.remove("btn-success"); classList.add("btn-primary");
+    
+      if (indice === perguntas.legth - 1){
+        document.getElementById("proxima").textContent = "Finalizar"
+        document.getElementById("proxima") = classList.remove("btn-primary"); 
+        document.getElementById("proxima") classList.add("btn-success")}
+      else{
+        document.getElementById("proxima").textContent = "Próxima"
+        document.getElementById("proxima") = classList.remove("btn-success"); 
+        document.getElementById("proxima") classList.add("btn-primary")}         
   }
 
   function selecionarOpcao(i) {
@@ -240,6 +244,7 @@
 
 </body>
 </html>
+
 
 
 
