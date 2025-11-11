@@ -157,6 +157,9 @@
 
     document.getElementById("proxima").textContent =
       indice === perguntas.length - 1 ? "Finalizar" : "Próxima";
+      document.getElementById("proxima") =
+        indice === perguntas.length - 1 ? classList.remove("btn-primary"); classList.add("btn-success") 
+        : classList.remove("btn-success"); classList.add("btn-primary");
   }
 
   function selecionarOpcao(i) {
@@ -200,14 +203,9 @@
     const resp = respostasUsuario[i];          
     const correta = p.correta;                 
     const acertou = resp === correta;          
-    const textoUsuario = resp === null
-      ? '<span class="text-muted">Não respondida</span>'
-      : `<strong>${p.opcoes[resp]}</strong>`;
- 
+    const textoUsuario = resp === null ? '<span class="text-muted">Não respondida</span>' : `<strong>${p.opcoes[resp]}</strong>`;
     
-    const icone = resp === null ? '' 
-      : (acertou ? '<i class="bi bi-check-circle text-success ms-2" title="Acertou"></i>'
-      : '<i class="bi bi-x-circle text-danger ms-2" title="Errou"></i>');
+    const icone = resp === null ? ''  : (acertou ? '<i class="bi bi-check-circle text-success ms-2" title="Acertou"></i>' : '<i class="bi bi-x-circle text-danger ms-2" title="Errou"></i>');
 
     const item = document.createElement("li");
     item.className = "list-group-item";
@@ -242,4 +240,5 @@
 
 </body>
 </html>
+
 
