@@ -1,9 +1,9 @@
+body{
+  padding-top: 80px;
+}
 /* Para telas pequenas: celulares */
 @media (max-width: 576px) {
   body {
     padding-top: 120px; /* Ajuste o valor se precisar */
   }
-}
-body{
-  padding-top: 80px;
 }
