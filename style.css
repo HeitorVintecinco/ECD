@@ -1,6 +1,48 @@
+/* ----------- PADRÃO (computador / telas grandes) ------------ */
+
 body {
-    padding-top: 80px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Compensa o menu fixo */
+main {
+    padding-top: 60px;
+}
+
+h1, .titulo-principal {
+    font-size: 2.6rem;
+    line-height: 1.2;
+}
+
+
+/* ----------- TELAS PEQUENAS (CELULAR) ------------ */
+/* Só entra se a tela for MENOR que 576px */
+
 @media (max-width: 576px) {
+
+    /* Reduz tamanho do título */
+    h1, .titulo-principal {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Empurra conteúdo pra baixo pra não ficar atrás da navbar */
+    main {
         padding-top: 120px;
     }
+
+    /* Deixa o logo menor */
+    .navbar-brand img {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Texto da marca menor */
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+}
+
