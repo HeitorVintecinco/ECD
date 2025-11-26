@@ -1,0 +1,43 @@
+#hdr{
+    
+    border-bottom: 3px solid transparent;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+   background-color: black;
+
+ 
+}
+#hdr .nav-link {
+    color: #fff !important;
+}
+#hdr .nav-link:hover {
+    color: #6fdb3d !important;
+}
+#hdr .active {
+    color: #729968 !important;
+}
+
+#hdr h1 {
+    color: #fff !important;
+}
+#ftr{
+    
+    border-top: 3px solid transparent;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: black;
+     color: #fff;
+    
+}
+header{
+    margin-bottom: 7rem;
+      
+}
+footer{
+margin-top: 7rem;
+
+}
+.c{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
