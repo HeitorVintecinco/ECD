@@ -1,5 +1,4 @@
-const perguntas = [
-    
+    const perguntas = [
     { pergunta: "Um dos objetivos da educação climática digital é ajudar o aluno a…", imagem: "",
       opcoes: ["Aprender sobre o clima", "Reciclar o lixo doméstico", "Utilizar menos mais plástico", "Entender como suas ações podem impactar o ambiente"], correta: 3,
       explicacao: "Quando o aluno entende o clima e o meio ambiente, reconhece como pequenas atitudes podem gerar grandes impactos." },
